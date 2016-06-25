@@ -17,5 +17,6 @@ selDatas <- mutate(selDatas, dates = dmy_hms(Dates))
 selDatas <- select(selDatas, dates, Global_active_power:Sub_metering_3)
 
 # ploting the plot for Frequency of Global_active_power
+png("plot1.png")
 hist(selDatas$Global_active_power, col="red", main="Global Active Power", xlab="Global Active Power(kilowatts)")
-# RESTE A METTRE DANS UN PNG !!!!
+dev.off()
