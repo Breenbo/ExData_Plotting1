@@ -25,7 +25,7 @@ with(selDatas, plot(dates, Global_active_power, type="l", xlab="", ylab="Global 
 # Voltage/datetime
 with(selDatas, plot(dates, Voltage, type="l", ylab="Voltage", xlab="datetime"))
 # Sub_metering
-with(selDatas, plot(dates, Sub_metering_1, col="black", type="l", ylab="Global Active Power (kilowatts)", xlab=""))
+with(selDatas, plot(dates, Sub_metering_1, col="black", type="l", ylab="Energy sub metering", xlab=""))
 with(selDatas, points(dates, Sub_metering_2, col="red", type="l"))
 with(selDatas, points(dates, Sub_metering_3, col="blue", type="l"))
 legend("topright", inset=.02, box.lty=0, pch="_", col=c("black","red","blue"), legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
